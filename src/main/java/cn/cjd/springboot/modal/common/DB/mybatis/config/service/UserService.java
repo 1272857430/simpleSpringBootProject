@@ -1,8 +1,8 @@
 package cn.cjd.springboot.modal.common.DB.mybatis.config.service;
 
-import com.modal.common.DB.mybatis.DBAccess;
-import com.modal.common.DB.mybatis.config.bean.User;
-import com.modal.common.DB.mybatis.config.daoInterface.IUser;
+import cn.cjd.springboot.modal.common.DB.mybatis.DBAccess;
+import cn.cjd.springboot.modal.common.DB.mybatis.config.bean.User;
+import cn.cjd.springboot.modal.common.DB.mybatis.config.daoInterface.IUser;
 import org.apache.ibatis.session.SqlSession;
 
 import java.io.IOException;

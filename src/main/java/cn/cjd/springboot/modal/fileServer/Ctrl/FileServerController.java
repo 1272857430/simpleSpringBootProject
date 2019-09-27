@@ -1,13 +1,12 @@
 package cn.cjd.springboot.modal.fileServer.Ctrl;
 
 import cn.cjd.springboot.modal.common.result.ObjectToResult;
-import cn.cjd.springboot.modal.common.utils.HttpHeaderUtil;
+import cn.cjd.springboot.modal.common.utils.simpleUtils.HttpHeaderUtil;
 import cn.cjd.springboot.modal.fileServer.bean.FileServerBean;
 import cn.cjd.springboot.modal.fileServer.service.FileServerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

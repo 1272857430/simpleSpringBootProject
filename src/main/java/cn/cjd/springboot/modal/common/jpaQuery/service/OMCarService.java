@@ -1,10 +1,10 @@
 package cn.cjd.springboot.modal.common.jpaQuery.service;
 
-import com.modal.common.jpaQuery.bean.OMCar;
-import com.modal.common.jpaQuery.dao.OMCarRepository;
-import com.modal.common.jpaQuery.vo.ColumnAttr;
-import com.modal.common.jpaQuery.vo.QueryVo;
-import com.modal.common.utils.StringUtils;
+import cn.cjd.springboot.modal.common.jpaQuery.bean.OMCar;
+import cn.cjd.springboot.modal.common.jpaQuery.dao.OMCarRepository;
+import cn.cjd.springboot.modal.common.jpaQuery.vo.ColumnAttr;
+import cn.cjd.springboot.modal.common.jpaQuery.vo.QueryVo;
+import cn.cjd.springboot.modal.common.utils.simpleUtils.StringUtils;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.query.NativeQuery;

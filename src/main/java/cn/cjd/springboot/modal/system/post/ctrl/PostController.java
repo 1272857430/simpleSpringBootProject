@@ -1,7 +1,7 @@
 package cn.cjd.springboot.modal.system.post.ctrl;
 
-import com.modal.system.post.bean.Post;
-import com.modal.system.post.service.PostService;
+import cn.cjd.springboot.modal.system.post.bean.Post;
+import cn.cjd.springboot.modal.system.post.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;

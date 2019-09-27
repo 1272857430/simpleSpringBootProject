@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.common.exception.utils;
 
-import com.modal.common.utils.simpleUtils.HttpHeaderUtil;
+import cn.cjd.springboot.modal.common.utils.simpleUtils.HttpHeaderUtil;
 
 import javax.servlet.http.HttpServletRequest;
 

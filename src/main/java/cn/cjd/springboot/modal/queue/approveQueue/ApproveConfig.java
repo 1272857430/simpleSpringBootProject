@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.queue.approveQueue;
 
-import com.modal.queue.TaskQueue;
+import cn.cjd.springboot.modal.queue.TaskQueue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

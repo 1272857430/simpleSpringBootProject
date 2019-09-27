@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.freemarker.ser;
 
-import com.modal.freemarker.vo.Animal;
+import cn.cjd.springboot.modal.freemarker.vo.Animal;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import org.springframework.stereotype.Service;

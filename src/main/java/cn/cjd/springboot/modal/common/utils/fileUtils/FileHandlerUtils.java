@@ -1,6 +1,7 @@
 package cn.cjd.springboot.modal.common.utils.fileUtils;
 
-import com.modal.common.exception.SysUnifiedException;
+
+import cn.cjd.springboot.modal.common.exception.SysUnifiedException;
 
 import java.io.File;
 import java.io.FileInputStream;

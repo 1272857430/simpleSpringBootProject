@@ -1,7 +1,7 @@
 package cn.cjd.springboot.testModal;
 
-import cn.cjd.springboot.modal.Application;
-import cn.cjd.springboot.modal.common.utils.GsonUtil;
+import cn.cjd.springboot.Application;
+import cn.cjd.springboot.modal.common.utils.simpleUtils.GsonUtil;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

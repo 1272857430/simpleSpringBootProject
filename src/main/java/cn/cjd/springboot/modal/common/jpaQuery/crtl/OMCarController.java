@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.common.jpaQuery.crtl;
 
-import com.modal.common.jpaQuery.service.OMCarService;
+import cn.cjd.springboot.modal.common.jpaQuery.service.OMCarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.GetMapping;

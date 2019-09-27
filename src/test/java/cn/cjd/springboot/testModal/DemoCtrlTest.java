@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
-public class DemoCtrlTest extends RedisApplicationTest {
+public class DemoCtrlTest extends ApplicationTest {
     
     @Test
     public  void testDemoGet() throws  Exception{

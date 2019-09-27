@@ -23,6 +23,7 @@
     <spring.version>4.3.9.RELEASE</spring.version>
     <redis.version>1.8.15.RELEASE</redis.version>
     <jedis.client.version>2.9.0</jedis.client.version>
+    <jackson.msgpack.version>0.8.16</jackson.msgpack.version>
   </properties>
 
   <!-- dependencyManagement   当dependencies 里面的依赖没有指定版本时 会优先在 dependencyManagement 里面查找版本-->
@@ -134,6 +135,11 @@
       <groupId>redis.clients</groupId>
       <artifactId>jedis</artifactId>
       <version>${jedis.client.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.msgpack</groupId>
+      <artifactId>jackson-dataformat-msgpack</artifactId>
+      <version>${jackson.msgpack.version}</version>
     </dependency>
 
     <!-- TODO poi -->

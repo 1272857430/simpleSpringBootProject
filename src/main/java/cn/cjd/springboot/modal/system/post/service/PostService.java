@@ -1,7 +1,7 @@
 package cn.cjd.springboot.modal.system.post.service;
 
-import com.modal.system.post.bean.Post;
-import com.modal.system.post.dao.PostRepository;
+import cn.cjd.springboot.modal.system.post.bean.Post;
+import cn.cjd.springboot.modal.system.post.dao.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

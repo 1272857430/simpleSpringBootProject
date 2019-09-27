@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.common.persistence;
 
-import com.modal.common.jpaQuery.bean.OMCar;
+import cn.cjd.springboot.modal.common.jpaQuery.bean.OMCar;
 
 import java.util.ArrayList;
 import java.util.Collection;
