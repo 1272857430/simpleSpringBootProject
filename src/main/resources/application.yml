@@ -1,0 +1,45 @@
+server:
+  port: 81
+
+spring:
+  redis:
+    port: 6379
+    host: 10.68.194.214
+    database: 2 #默认使用db0
+    timeout: 0
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+  datasource:
+    url: jdbc:oracle:thin:@192.168.10.215:1521/orclpdb
+    username: metadata
+    password: 123456
+    dbcp2:
+      driver: oracle.jdbc.driver.OracleDriver
+    other:
+      url: jdbc:mysql://192.168.10.240:3306/ibps109?characterEncoding=utf-8&serverTimezone=UTC&useSSL=true
+      username: test
+      password: 123456
+      dbcp2:
+        driver: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    database: ORACLE
+    hibernate.ddl-auto: create-drop
+  freemarker:
+    cache: false
+    suffix: .ftl
+#     配置相对路径
+#    template-loader-path: classpath:/ftl/
+#     配置绝对路径
+    template-loader-path: file:C:/Users/170096/Desktop/testSpring/src/main/java/com/modal/freemarker/
+    charset: UTF-8
+
+
+# REST超时配置
+rest:
+  ReadTimeout: 3000
+  ConnectTimeout: 3000
