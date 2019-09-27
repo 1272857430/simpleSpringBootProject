@@ -1,7 +1,7 @@
 package cn.cjd.springboot.modal.system.girl.bean;
 
+import cn.cjd.springboot.modal.common.bean.BaseEntityBean;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.modal.common.bean.BaseEntityBean;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Column;

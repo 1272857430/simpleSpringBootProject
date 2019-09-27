@@ -1,8 +1,9 @@
 package cn.cjd.springboot.modal.common.exception.utils;
 
-import com.modal.common.exception.conf.ExceptionInfo;
-import com.modal.common.exception.vo.ErrorInfoVO;
-import com.modal.common.exception.vo.ExceptionResultVO;
+
+import cn.cjd.springboot.modal.common.exception.conf.ExceptionInfo;
+import cn.cjd.springboot.modal.common.exception.vo.ErrorInfoVO;
+import cn.cjd.springboot.modal.common.exception.vo.ExceptionResultVO;
 
 /**
  * Created by 170096 on 2018/8/29

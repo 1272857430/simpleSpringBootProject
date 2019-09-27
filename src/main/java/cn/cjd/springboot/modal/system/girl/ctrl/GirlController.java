@@ -1,8 +1,8 @@
 package cn.cjd.springboot.modal.system.girl.ctrl;
 
-import com.modal.system.girl.bean.Girl;
-import com.modal.system.girl.service.GirlService;
-import com.modal.system.result.Results;
+import cn.cjd.springboot.modal.system.girl.bean.Girl;
+import cn.cjd.springboot.modal.system.girl.service.GirlService;
+import cn.cjd.springboot.modal.system.result.Results;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;

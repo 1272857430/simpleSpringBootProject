@@ -1,9 +1,9 @@
 package cn.cjd.springboot.modal.fileServer.service;
 
-import com.modal.common.exception.SysUnifiedException;
-import com.modal.common.utils.fileUtils.FileHandlerUtils;
-import com.modal.common.utils.fileUtils.FileService;
-import com.modal.fileServer.bean.FileServerBean;
+import cn.cjd.springboot.modal.common.exception.SysUnifiedException;
+import cn.cjd.springboot.modal.common.utils.fileUtils.FileHandlerUtils;
+import cn.cjd.springboot.modal.common.utils.fileUtils.FileService;
+import cn.cjd.springboot.modal.fileServer.bean.FileServerBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

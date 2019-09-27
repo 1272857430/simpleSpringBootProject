@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.common.DB.mybatis.config.daoInterface;
 
-import com.modal.common.DB.mybatis.config.bean.CarType;
+import cn.cjd.springboot.modal.common.DB.mybatis.config.bean.CarType;
 
 /**
  * 与CarType对应的接口

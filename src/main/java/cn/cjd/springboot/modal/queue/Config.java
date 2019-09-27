@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.queue;
 
-import com.modal.common.utils.SpringContextUtils;
+import cn.cjd.springboot.modal.common.utils.SpringContextUtils;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

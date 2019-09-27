@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.common.jpaQuery.dao;
 
-import com.modal.common.jpaQuery.bean.OMCar;
+import cn.cjd.springboot.modal.common.jpaQuery.bean.OMCar;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;

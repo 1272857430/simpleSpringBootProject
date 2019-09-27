@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.common.utils.dataTimeUtils;
 
-import com.modal.common.utils.simpleUtils.StringUtils;
+import cn.cjd.springboot.modal.common.utils.simpleUtils.StringUtils;
 
 import java.text.DateFormat;
 import java.text.ParseException;

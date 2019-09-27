@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.system.privilege.dao;
 
-import com.modal.system.privilege.bean.Privilege;
+import cn.cjd.springboot.modal.system.privilege.bean.Privilege;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

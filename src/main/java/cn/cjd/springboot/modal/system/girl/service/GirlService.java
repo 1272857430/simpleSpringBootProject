@@ -1,11 +1,11 @@
 package cn.cjd.springboot.modal.system.girl.service;
 
-import com.modal.common.bean.BaseRepository;
-import com.modal.system.girl.bean.Girl;
-import com.modal.system.girl.bean.GirlVO;
-import com.modal.system.girl.dao.GirlRepository;
-import com.modal.system.sysException.EventCode;
-import com.modal.system.sysException.GirlException;
+import cn.cjd.springboot.modal.common.bean.BaseRepository;
+import cn.cjd.springboot.modal.system.girl.bean.Girl;
+import cn.cjd.springboot.modal.system.girl.bean.GirlVO;
+import cn.cjd.springboot.modal.system.girl.dao.GirlRepository;
+import cn.cjd.springboot.modal.system.sysException.EventCode;
+import cn.cjd.springboot.modal.system.sysException.GirlException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

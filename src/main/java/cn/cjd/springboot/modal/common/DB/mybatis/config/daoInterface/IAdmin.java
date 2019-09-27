@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.common.DB.mybatis.config.daoInterface;
 
-import com.modal.common.DB.mybatis.config.bean.Admin;
+import cn.cjd.springboot.modal.common.DB.mybatis.config.bean.Admin;
 
 /**
  * 与Admin.xml文件相对应的接口

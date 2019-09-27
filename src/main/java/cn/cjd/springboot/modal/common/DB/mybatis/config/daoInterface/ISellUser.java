@@ -1,7 +1,6 @@
 package cn.cjd.springboot.modal.common.DB.mybatis.config.daoInterface;
 
-
-import com.modal.common.DB.mybatis.config.bean.SellUser;
+import cn.cjd.springboot.modal.common.DB.mybatis.config.bean.SellUser;
 
 import java.util.List;
 import java.util.Map;

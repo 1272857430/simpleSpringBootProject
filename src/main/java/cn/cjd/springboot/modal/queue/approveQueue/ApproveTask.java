@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.queue.approveQueue;
 
-import com.modal.queue.BasicTask;
+import cn.cjd.springboot.modal.queue.BasicTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

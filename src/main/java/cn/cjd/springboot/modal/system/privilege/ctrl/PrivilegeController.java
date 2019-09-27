@@ -1,7 +1,7 @@
 package cn.cjd.springboot.modal.system.privilege.ctrl;
 
-import com.modal.system.privilege.bean.Privilege;
-import com.modal.system.privilege.service.PrivilegeService;
+import cn.cjd.springboot.modal.system.privilege.bean.Privilege;
+import cn.cjd.springboot.modal.system.privilege.service.PrivilegeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;

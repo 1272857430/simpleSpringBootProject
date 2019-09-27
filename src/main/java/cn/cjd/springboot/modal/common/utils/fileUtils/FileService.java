@@ -1,7 +1,6 @@
 package cn.cjd.springboot.modal.common.utils.fileUtils;
 
-import com.modal.common.exception.SysUnifiedException;
-import org.apache.tomcat.util.http.fileupload.FileUtils;
+import cn.cjd.springboot.modal.common.exception.SysUnifiedException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 

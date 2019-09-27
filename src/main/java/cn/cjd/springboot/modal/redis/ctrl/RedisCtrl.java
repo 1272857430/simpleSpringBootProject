@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.redis.ctrl;
 
-import com.modal.redis.util.RedisUtils;
+import cn.cjd.springboot.modal.redis.util.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;

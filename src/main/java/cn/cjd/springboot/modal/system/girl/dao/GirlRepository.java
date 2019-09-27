@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.system.girl.dao;
 
-import com.modal.system.girl.bean.Girl;
+import cn.cjd.springboot.modal.system.girl.bean.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,9 +1,9 @@
 package cn.cjd.springboot.modal.common.exception.aspect;
 
-import com.modal.common.exception.SysUnifiedException;
-import com.modal.common.exception.conf.ExceptionInfo;
-import com.modal.common.exception.utils.ExceptionTransformer;
-import com.modal.common.exception.vo.ExceptionResultVO;
+import cn.cjd.springboot.modal.common.exception.SysUnifiedException;
+import cn.cjd.springboot.modal.common.exception.conf.ExceptionInfo;
+import cn.cjd.springboot.modal.common.exception.utils.ExceptionTransformer;
+import cn.cjd.springboot.modal.common.exception.vo.ExceptionResultVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.MessageSource;

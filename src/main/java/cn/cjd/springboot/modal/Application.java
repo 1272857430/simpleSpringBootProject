@@ -14,10 +14,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement // 开启事务管理
 @SpringBootApplication
 @ImportResource(locations = {"classpath:application-bean.xml"})
-public class RedisApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(RedisApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
 

@@ -1,9 +1,9 @@
 package cn.cjd.springboot.modal.fileServer.Ctrl;
 
-import com.modal.common.result.ObjectToResult;
-import com.modal.common.utils.simpleUtils.HttpHeaderUtil;
-import com.modal.fileServer.bean.FileServerBean;
-import com.modal.fileServer.service.FileServerService;
+import cn.cjd.springboot.modal.common.result.ObjectToResult;
+import cn.cjd.springboot.modal.common.utils.HttpHeaderUtil;
+import cn.cjd.springboot.modal.fileServer.bean.FileServerBean;
+import cn.cjd.springboot.modal.fileServer.service.FileServerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

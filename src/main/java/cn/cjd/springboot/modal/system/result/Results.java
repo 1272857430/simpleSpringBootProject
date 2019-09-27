@@ -1,6 +1,7 @@
 package cn.cjd.springboot.modal.system.result;
 
-import com.modal.system.sysException.EventCode;
+
+import cn.cjd.springboot.modal.system.sysException.EventCode;
 
 /**
  * Created by 170096 on 2017/8/15

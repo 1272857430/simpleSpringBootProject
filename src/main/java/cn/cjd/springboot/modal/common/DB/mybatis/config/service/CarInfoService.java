@@ -1,8 +1,8 @@
 package cn.cjd.springboot.modal.common.DB.mybatis.config.service;
 
-import com.modal.common.DB.mybatis.DBAccess;
-import com.modal.common.DB.mybatis.config.bean.CarInfo;
-import com.modal.common.DB.mybatis.config.daoInterface.ICarInfo;
+import cn.cjd.springboot.modal.common.DB.mybatis.DBAccess;
+import cn.cjd.springboot.modal.common.DB.mybatis.config.bean.CarInfo;
+import cn.cjd.springboot.modal.common.DB.mybatis.config.daoInterface.ICarInfo;
 import org.apache.ibatis.session.SqlSession;
 
 import java.io.IOException;

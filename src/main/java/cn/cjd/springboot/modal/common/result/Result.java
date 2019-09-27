@@ -1,6 +1,7 @@
 package cn.cjd.springboot.modal.common.result;
 
-import com.modal.common.exception.conf.ExceptionInfo;
+
+import cn.cjd.springboot.modal.common.exception.conf.ExceptionInfo;
 
 import java.util.Map;
 

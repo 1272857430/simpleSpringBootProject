@@ -1,7 +1,6 @@
 package cn.cjd.springboot.modal.common.DB.mybatis.config.daoInterface;
 
-
-import com.modal.common.DB.mybatis.config.bean.CarBrand;
+import cn.cjd.springboot.modal.common.DB.mybatis.config.bean.CarBrand;
 
 /**
  * 与CarBrand.xml文件相对应的接口

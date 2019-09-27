@@ -1,7 +1,7 @@
 package cn.cjd.springboot.modal.system.privilege.service;
 
-import com.modal.system.privilege.bean.Privilege;
-import com.modal.system.privilege.dao.PrivilegelRepository;
+import cn.cjd.springboot.modal.system.privilege.bean.Privilege;
+import cn.cjd.springboot.modal.system.privilege.dao.PrivilegelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

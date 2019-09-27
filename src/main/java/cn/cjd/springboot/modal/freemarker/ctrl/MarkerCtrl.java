@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.freemarker.ctrl;
 
-import com.modal.freemarker.ser.MarkerService;
+import cn.cjd.springboot.modal.freemarker.ser.MarkerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

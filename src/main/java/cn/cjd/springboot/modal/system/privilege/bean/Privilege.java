@@ -1,6 +1,7 @@
 package cn.cjd.springboot.modal.system.privilege.bean;
 
-import com.modal.common.bean.BaseEntityBean;
+
+import cn.cjd.springboot.modal.common.bean.BaseEntityBean;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

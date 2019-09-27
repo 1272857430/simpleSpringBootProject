@@ -1,7 +1,7 @@
 package cn.cjd.springboot.modal.system.sysException;
 
-import com.modal.system.result.ResultBean;
-import com.modal.system.result.Results;
+import cn.cjd.springboot.modal.system.result.ResultBean;
+import cn.cjd.springboot.modal.system.result.Results;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
