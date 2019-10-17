@@ -18,8 +18,8 @@ public class HibernateUitl {
 
     static {
         // 创建COnfiguration对象，读取hibernate.cfg.xml文件，完成初始化（默认读取hibernate.cfg.xml）
-//        Configuration cfg = new Configuration().configure("spring-hibernate.xml");
-        Configuration cfg = new Configuration();
+        Configuration cfg = new Configuration().configure("spring-hibernate.xml");
+//        Configuration cfg = new Configuration();
         // 创建服务注册对象
         StandardServiceRegistryBuilder ssrb = new StandardServiceRegistryBuilder().applySettings(cfg.getProperties());
         StandardServiceRegistry ssr = ssrb.build();
