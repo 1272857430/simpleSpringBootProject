@@ -19,7 +19,7 @@
     <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
     <surefire-plugin.version>2.19.1</surefire-plugin.version>
     <!-- 开发环境 -->
-    <springBoot.version>1.5.9.RELEASE</springBoot.version>
+    <springBoot.version>1.5.2.RELEASE</springBoot.version>
     <spring.version>4.3.9.RELEASE</spring.version>
     <redis.version>1.8.15.RELEASE</redis.version>
     <jedis.client.version>2.9.0</jedis.client.version>
@@ -33,7 +33,7 @@
         <!-- Import dependency management from Spring Boot -->
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <version>1.5.2.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -56,6 +56,16 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
       <version>${springBoot.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-entitymanager</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -93,6 +103,7 @@
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-entitymanager</artifactId>
+      <version>5.4.6.Final</version>
     </dependency>
     <dependency>
       <groupId>org.aspectj</groupId>
@@ -165,11 +176,12 @@
     <!-- TODO jackson-->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>2.10.0.pr3</version>
+      <artifactId>jackson-core</artifactId>
+      <version>2.10.0</version>
     </dependency>
 
-    <!-- TODO gson-->
+
+      <!-- TODO gson-->
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>

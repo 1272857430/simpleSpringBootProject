@@ -2,16 +2,16 @@ server:
   port: 81
 
 spring:
-#  redis:
-#    port: 6379
-#    host: 10.68.194.214
-#    database: 2 #默认使用db0
-#    timeout: 0
-#    pool:
-#      max-active: 8
-#      max-wait: -1
-#      max-idle: 8
-#      min-idle: 0
+  redis:
+    database: 11  #默认使用db0
+    host: 192.168.1.44
+    password: Sayyoo_redis_123
+    port: 56679
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
 #  datasource:
 #    url: jdbc:oracle:thin:@192.168.10.215:1521/orclpdb
 #    username: metadata
@@ -24,24 +24,23 @@ spring:
 #      password: 123456
 #      dbcp2:
 #        driver: com.mysql.jdbc.Driver
-  redis:
-    database: 11
-    host: 192.168.1.44
-    password: Sayyoo_redis_123
-    port: 56679
   datasource:
-    druid:
-      url: jdbc:mysql://192.168.1.44:56612/pay?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://192.168.1.44:56612/cjd?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: sayyoo
+    password: sayyoo123
+    dbcp2:
+      driver: com.mysql.jdbc.Driver
+    other:
+      url: jdbc:mysql://192.168.1.44:56612/cjd?useUnicode=true&characterEncoding=UTF-8&useSSL=false
       username: sayyoo
       password: sayyoo123
-      driver-class-name: com.mysql.jdbc.Driver
-    output:
-      ansi:
-        enabled: always
+      dbcp2:
+        driver: com.mysql.jdbc.Driver
+
   jpa:
     show-sql: true
     generate-ddl: true
-    database: MYSQL
+    database: mysql
     hibernate.ddl-auto: none
   freemarker:
     cache: false

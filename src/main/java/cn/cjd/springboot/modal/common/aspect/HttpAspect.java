@@ -23,7 +23,7 @@ public class HttpAspect {
 
     private final static Logger logger = LoggerFactory.getLogger(HttpAspect.class);
 
-    @Pointcut("execution(public * cn.cjd.springboot..*(..))")
+    @Pointcut("execution(public * cn.cjd.springboot.modal.fileServer.Ctrl..*(..))")
     public void log(){
     }
 
