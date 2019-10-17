@@ -1,4 +1,4 @@
-package cn.cjd.springboot.modal.db_use.hibernate;
+package cn.cjd.springboot.modal.db_use.hibernate.bean;
 
 import java.util.Date;
 

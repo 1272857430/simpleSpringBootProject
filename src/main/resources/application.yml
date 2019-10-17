@@ -51,6 +51,24 @@ spring:
     template-loader-path: file:/Users/chengjiade/Desktop/simpleSpringBootProject/src/main/resources/ftl/hello.ftl
     charset: UTF-8
 
+
+#nutz dao
+nutz:
+  json:
+    date-format: yyyy-MM-dd HH:mm:ss z
+  dao:
+    runtime:
+      add-column: true
+      check-index: true
+      delete-column: false
+      foce-create: false #此配置为true则每次均会删表重建
+      create: true
+      migration: true
+      basepackage: cn.sayyoo.payserver
+    sqlmanager:
+      paths:
+        - sqls
+
 # REST超时配置
 rest:
   ReadTimeout: 3000
