@@ -8,6 +8,9 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Config {
 
+    /**
+     * CommandLineRunner 项目启动时，执行的任务
+     */
     @Bean("initQueue")
     public CommandLineRunner initQueue() {
         return (String... strings) -> {
