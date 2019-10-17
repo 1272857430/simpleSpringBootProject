@@ -1,6 +1,6 @@
 package cn.cjd.springboot.testModal.test;
 
-import cn.cjd.springboot.testModal.ApplicationTest;
+import cn.cjd.springboot.testModal.BaseTest.SpringBootTest.ApplicationTest;
 import org.junit.Test;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;

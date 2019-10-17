@@ -1,7 +1,7 @@
 package cn.cjd.springboot.testModal.testDatabase;
 
 import cn.cjd.springboot.modal.testModal.testDatabase.TestDataBase;
-import cn.cjd.springboot.testModal.ApplicationTest;
+import cn.cjd.springboot.testModal.BaseTest.SpringBootTest.ApplicationTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

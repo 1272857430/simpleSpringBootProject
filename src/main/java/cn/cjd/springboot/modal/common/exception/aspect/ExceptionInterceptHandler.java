@@ -26,7 +26,7 @@ public class ExceptionInterceptHandler {
     private static final Logger LOG = LoggerFactory.getLogger(ExceptionInterceptHandler.class);
     private static final String IS_OUTER_REQ = "outerReqFlag";
     private static final String DEFAULT_ERROR_CODE = "SCPSBE000001";
-    private static final String DEFAULT_ERROR_CODE_STRING = "base.common.unchecked";
+    private static final String DEFAULT_ERROR_CODE_STRING = "todoAPI.common.unchecked";
     private static final String DEFAULT_ERROR_MESSAGE = "System error.";
     private static final String MESSAGE = ".message";
     private static final String DESC = ".description";
@@ -106,7 +106,7 @@ public class ExceptionInterceptHandler {
 
     private ExceptionInfo getExceptionInfo(String errorCode, Object[] args) {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        String errorCodeStr = "base.common.unchecked";
+        String errorCodeStr = "todoAPI.common.unchecked";
         String message = "System error.";
         String description = "";
         String tip = "";
