@@ -6,18 +6,18 @@
 
     <groupId>cn.cjd.springboot</groupId>
     <artifactId>cn-cjd-springboot</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.6-SNAPSHOT</version>
 
     <name>cn-cjd-springboot</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+    <packaging>jar</packaging>
+
     <properties>
         <!-- 基础环境 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
-        <surefire-plugin.version>2.19.1</surefire-plugin.version>
         <!-- 开发环境 -->
         <springBoot.version>1.5.2.RELEASE</springBoot.version>
         <spring.version>4.3.9.RELEASE</spring.version>
@@ -260,11 +260,11 @@
 
     <build>
         <plugins>
-            <!-- 编译插件-->
+            <!-- 编译插件，作为一个普通的方法jar打包-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
+                <version>3.5.1</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -276,7 +276,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>${surefire-plugin.version}</version>
+                <version>2.19.1</version>
+                <!-- 忽略测试-->
                 <configuration>
                     <skipTests>true</skipTests>
                 </configuration>
@@ -299,10 +300,11 @@
                 </executions>
             </plugin>
 
-            <!-- 编译插件-->
+            <!-- 编译插件, 作为一个SpringBoot项目打包-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!-- 指定启动类-->
                 <configuration>
                     <mainClass>cn.cjd.springboot.Application</mainClass>
                 </configuration>
@@ -315,6 +317,17 @@
                 </executions>
             </plugin>
         </plugins>
+         <!--设置不被打包的资源信息 -->
+        <resources>
+            <resource>
+                <!-- 指定resources插件处理哪个目录下的资源文件 -->
+                <directory>src/main/resources</directory>
+                <!--注意此次必须要放在此目录下才能被访问到 -->
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>hello.ftl</exclude>
+                </excludes>
+            </resource>
+        </resources>
     </build>
-
 </project>
