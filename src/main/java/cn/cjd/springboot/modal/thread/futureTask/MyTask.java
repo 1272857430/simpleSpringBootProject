@@ -19,7 +19,7 @@ public class MyTask implements Callable<Object> {
         String result = "";
 
         for (int i = 0; i < 5 ; i++) {
-            Thread.currentThread().sleep(1000);
+            Thread.currentThread().sleep(500);
             result += "args1=" + args1 + "-" + "args2=" +  args1;
         }
         return result;
