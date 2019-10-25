@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableCaching //开启缓存
 @EnableTransactionManagement // 开启事务管理
 @SpringBootApplication
-@ImportResource(locations = {"classpath:application-bean.xml"})
+//@ImportResource(locations = {"classpath:application-bean.xml"})
 public class Application {
 
     public static void main( String[] args ){
