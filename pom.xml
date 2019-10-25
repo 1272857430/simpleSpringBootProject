@@ -258,6 +258,25 @@
         </repository>
     </distributionManagement>
 
+    <!-- TODO 指定获取jar包的仓库地址-->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <!-- 是否开启发布版构件下载 -->
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <!-- 是否开启快照版构件下载 -->
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+
     <build>
         <plugins>
             <!-- 编译插件，作为一个普通的方法jar打包-->
