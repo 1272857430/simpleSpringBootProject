@@ -25,15 +25,15 @@ spring:
 #      dbcp2:
 #        driver: com.mysql.jdbc.Driver
   datasource:
-    url: jdbc:mysql://116.62.166.134/cjd_test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: sy_db_admin
-    password: uCDNpfdRRwG6airooene1M19
+    url: jdbc:mysql://106.54.203.78/simple_spring?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: YQ950109cjd941001
     dbcp2:
       driver: com.mysql.jdbc.Driver
     other:
-      url: jdbc:mysql://116.62.166.134/cjd_test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-      username: sy_db_admin
-      password: uCDNpfdRRwG6airooene1M19
+      url: jdbc:mysql://106.54.203.78/simple_spring?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: YQ950109cjd941001
       dbcp2:
         driver: com.mysql.jdbc.Driver
 
