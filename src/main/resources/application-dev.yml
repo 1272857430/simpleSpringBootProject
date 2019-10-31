@@ -4,8 +4,8 @@ server:
 spring:
   redis:
     database: 11  #默认使用db0
-    host: 116.62.166.134
-    password: Sayyoo_redis_123
+    host: 62.234.137.124
+    password: YQ950109cjd941001
     port: 56679
     pool:
       max-active: 8
