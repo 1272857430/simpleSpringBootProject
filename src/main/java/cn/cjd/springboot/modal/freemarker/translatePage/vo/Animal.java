@@ -1,4 +1,4 @@
-package cn.cjd.springboot.modal.freemarker.vo;
+package cn.cjd.springboot.modal.freemarker.translatePage.vo;
 
 /**
  * Created by 170096 on 2018/10/8 17:43

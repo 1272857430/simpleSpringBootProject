@@ -1,12 +1,8 @@
-package cn.cjd.springboot.modal.freemarker.ser;
+package cn.cjd.springboot.modal.freemarker.translatePage.ser;
 
-import cn.cjd.springboot.modal.freemarker.vo.Animal;
-import freemarker.template.Configuration;
-import freemarker.template.Template;
+import cn.cjd.springboot.modal.freemarker.translatePage.vo.Animal;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

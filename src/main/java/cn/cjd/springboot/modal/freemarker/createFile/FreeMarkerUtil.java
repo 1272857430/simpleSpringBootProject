@@ -1,6 +1,5 @@
 package cn.cjd.springboot.modal.freemarker.createFile;
 
-import cn.sayyoo.workflow.test.vo.ModelDataVo;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 
@@ -9,7 +8,7 @@ import java.util.Map;
 
 public class FreeMarkerUtil {
 
-    public static void createTestCaseFile(ModelDataVo modelDataVo, String modelPath, String classPath){
+    public static void createTestCaseFile(Map<String, Object> dataMap, String modelPath, String classPath){
         // step1 创建freeMarker配置实例
         Configuration configuration = new Configuration();
         Writer out = null;
@@ -17,7 +16,7 @@ public class FreeMarkerUtil {
             // step2 获取模版路径
             configuration.setDirectoryForTemplateLoading(new File(modelPath));
             // step3 创建数据模型
-            Map<String, Object> dataMap = BeanUtils.transBean2Map(modelDataVo);
+//            Map<String, Object> dataMap = BeanUtils.transBean2Map(modelDataVo);
             // step4 加载模版文件
             Template template = configuration.getTemplate("model.ftl");
             // step5 生成数据

@@ -9,45 +9,62 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 @SuppressWarnings("unused")
-public class BeanCopyUtil {
+public class BeanUtil {
 
-    /**
-     * 源数据字段集合
-     */
-    private List<String> sourceFields;
+    private static BeanUtil bean = null;
 
-    /**
-     * 目标数据字段集合
-     */
-    private List<String> targetFields;
-
-    private static BeanCopyUtil bean = null;
-
-    private BeanCopyUtil(){
+    private BeanUtil(){
     }
 
     /**
      * 获取对象
-     *
      */
-    public static BeanCopyUtil getInstance() {
+    public static BeanUtil getInstance() {
         if (bean == null) {
-            bean = new BeanCopyUtil();
+            bean = new BeanUtil();
         }
         return bean;
     }
 
     /**
-     * 执行复制，为空或者源数据无该字段则不复制
-     *
+     * Bean --> Map 1: 利用Introspector和PropertyDescriptor 将Bean --> Map
      */
-    public void copy(Object source, Object target) throws Exception {
-        sourceFields = getFieldName(source);
-        targetFields = getFieldName(target);
+    public static Map<String, Object> transBean2Map(Object obj) {
+        if(obj == null){
+            return null;
+        }
+        Map<String, Object> map = new HashMap<>();
+        try {
+            BeanInfo beanInfo = Introspector.getBeanInfo(obj.getClass());
+            PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
+            for (PropertyDescriptor property : propertyDescriptors) {
+                String key = property.getName();
+                // 过滤class属性
+                if (!key.equals("class")) {
+                    // 得到property对应的getter方法
+                    Method getter = property.getReadMethod();
+                    Object value = getter.invoke(obj);
+                    map.put(key, value);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("transBean2Map Error " + e);
+        }
+        return map;
+    }
+
+    /**
+     * 执行复制，为空或者源数据无该字段则不复制
+     */
+    public void copy(Object source, Object target) {
+        // 源    所有字段
+        List<String> sourceFields = getFieldName(source);
+        // 目标   所有字段
+        List<String> targetFields = getFieldName(target);
         targetFields.forEach((sf) -> {
             try {
                 // 如果源数据有该字段，则复制
-                if(isHasField(sf)) {
+                if(sourceFields.contains(sf)) {
                     String firstLetter = sf.substring(0, 1).toUpperCase();
                     String setter = "set" + firstLetter + sf.substring(1);
                     Method method = null;
@@ -75,18 +92,7 @@ public class BeanCopyUtil {
         });
     }
 
-    /**
-     * 判断源数据是否有该字段
-     *
-     */
-    private boolean isHasField(String field) {
-        return sourceFields.contains(field);
-    }
-
-    /**
-     * 获取对象所有字段
-     *
-     */
+    //  获取对象所有字段
     private List<String> getFieldName(Object o){
         // 如果目标数据源为map则执行
         if (o instanceof Map) {
@@ -106,18 +112,12 @@ public class BeanCopyUtil {
         return fieldNames;
     }
 
-    /**
-     * 根据字段名，获取字段类型
-     *
-     */
+    // 根据字段名，获取字段类型
     private Class<?> getFieldType(String fieldName, Class clazz) throws NoSuchFieldException {
         return clazz.getDeclaredField(fieldName).getType();
     }
 
-    /**
-     * 根据字段名获取字段值
-     *
-     */
+    // 根据字段名获取字段值
     private Object getFieldValueByName(String fieldName, Object o) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
         try {
             String firstLetter = fieldName.substring(0, 1).toUpperCase();
@@ -129,36 +129,5 @@ public class BeanCopyUtil {
             e.printStackTrace();
             throw e;
         }
-    }
-
-    // Bean --> Map 1: 利用Introspector和PropertyDescriptor 将Bean --> Map
-    public static Map<String, Object> transBean2Map(Object obj) {
-
-        if(obj == null){
-            return null;
-        }
-        Map<String, Object> map = new HashMap<>();
-        try {
-            BeanInfo beanInfo = Introspector.getBeanInfo(obj.getClass());
-            PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
-            for (PropertyDescriptor property : propertyDescriptors) {
-                String key = property.getName();
-
-                // 过滤class属性
-                if (!key.equals("class")) {
-                    // 得到property对应的getter方法
-                    Method getter = property.getReadMethod();
-                    Object value = getter.invoke(obj);
-
-                    map.put(key, value);
-                }
-
-            }
-        } catch (Exception e) {
-            System.out.println("transBean2Map Error " + e);
-        }
-
-        return map;
-
     }
 }

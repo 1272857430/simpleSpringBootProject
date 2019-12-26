@@ -1,4 +1,4 @@
-package cn.cjd.springboot.modal.common.utils;
+package cn.cjd.springboot.modal.common.utils.springContext;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/springContextUtils")
-public class TestController {
+public class TestSpringContextController {
 
     @GetMapping(value = "/testGetBean")
     public void testGetBean(){
