@@ -37,6 +37,7 @@ public class MainTask implements Callable<FormReportBean> {
             formExcelResultProvider.update(record);
         }
 
+
         getReviewRecordForExcel(formReportBean);
 
         return formReportBean;
