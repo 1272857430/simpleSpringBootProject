@@ -41,6 +41,7 @@ public class MainClass {
                 e.printStackTrace();
             }
         });
+        result.stream().sorted((o1,o2)->{return 1;});
 
 //        logger.info("总耗时==========================" + ((System.currentTimeMillis() - start) / 1000));
         return result;
