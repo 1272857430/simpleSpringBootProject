@@ -1,6 +1,6 @@
 package cn.cjd.springboot.modal.thread.futureTask.simpleUse;
 
-import com.modal.thread.pool.ThreadPoolUtil;
+import cn.cjd.springboot.modal.thread.pool.ThreadPoolUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,6 @@ public class MainClass {
         List<Long> flowTaskIds = flowTaskProvider.getFlowTaskIdsByMap(map);
         if (flowTaskIds == null || flowTaskIds.size() == 0)
             return null;
-
 
         List<FutureTask<FormReportBean>> futureTaskList = new ArrayList<>();
         // 创建任务队列
