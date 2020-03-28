@@ -2,9 +2,7 @@ package cn.cjd.springboot.modal.thread.futureTask.simpleUse;
 
 import cn.cjd.springboot.modal.thread.pool.ThreadPoolUtil;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.FutureTask;
 
 
@@ -41,7 +39,7 @@ public class MainClass {
                 e.printStackTrace();
             }
         });
-        result.stream().sorted((o1,o2)->{return 1;});
+        result.stream().sorted(Comparator.comparing(FormReportBean::getPlanTime));
 
 //        logger.info("总耗时==========================" + ((System.currentTimeMillis() - start) / 1000));
         return result;
@@ -77,6 +75,10 @@ class FowTaskProvider {
 }
 
 class FormReportBean{
+
+    public Long getPlanTime(){
+        return new Date().getTime();
+    }
 
 }
 
