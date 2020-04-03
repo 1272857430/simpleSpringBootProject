@@ -10,7 +10,7 @@ public class FreeMarkerUtil {
 
     public static void createTestCaseFile(Map<String, Object> dataMap, String modelPath, String classPath){
         // step1 创建freeMarker配置实例
-        Configuration configuration = new Configuration();
+        Configuration configuration = new Configuration(Configuration.VERSION_2_3_25);
         Writer out = null;
         try {
             // step2 获取模版路径
