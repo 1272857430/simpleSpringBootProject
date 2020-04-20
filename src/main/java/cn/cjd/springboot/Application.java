@@ -1,6 +1,5 @@
 package cn.cjd.springboot;
 
-import cn.cjd.springboot.modal.common.utils.springContext.SpringContextUtils;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableCaching //开启缓存
 @EnableTransactionManagement // 开启事务管理
 @SpringBootApplication
-@ImportResource(locations = {"classpath:application-bean.xml"})
+//@ImportResource(locations = {"classpath:application-bean.xml"})
 public class Application {
 
     public static void main( String[] args ){
