@@ -1,0 +1,29 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.cjd.springboot.modal.db_use.otherDataSource.config.DataSourceConfig",
+      "name": "spring.datasource.other",
+      "sourceMethod": "truckOneDataSource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "cn.cjd.springboot.modal.redis.bean.RedisConn",
+      "name": "spring.redis",
+      "type": "cn.cjd.springboot.modal.redis.bean.RedisConn"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.cjd.springboot.modal.redis.bean.RedisConn",
+      "name": "spring.redis.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.cjd.springboot.modal.redis.bean.RedisConn",
+      "defaultValue": 0,
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
