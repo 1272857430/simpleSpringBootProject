@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <!-- 开发环境 -->
-        <springBoot.version>1.5.2.RELEASE</springBoot.version>
+        <springBoot.version>2.5.12</springBoot.version>
         <spring.version>4.3.9.RELEASE</spring.version>
         <redis.version>1.8.15.RELEASE</redis.version>
         <jedis.client.version>2.9.0</jedis.client.version>
